@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>
+	<title>Portfolio | Prasad Paradkar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="myPortfolio.js"></script>
+  	<link rel="stylesheet" href="myPortfolio.css">
+</head>
+
+<body data-spy="scroll" data-target="#mainNav">
+	<nav id="mainNav" class="navbar navbar-fixed-top">
+  		<div class="container-fluid">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+      			</button>
+      			<a class="navbar-brand hidden-xs" href="#sectionHome">
+      				<img src="portfolioLogo.png">
+      			</a>
+    		</div>
+
+    		<!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="menu">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a id="lnkHome" href="#sectionHome">Home</a></li>
+		        <li><a id="lnkAboutMe" href="#sectionAboutMe">About Me</a></li>
+		        <li id="lnkSkills"><a href="#sectionSkills">Skills</a></li>
+		        <li><a id="lnkContact" href="#sectionContactMe">Contact</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+
+	<!--Home Section-->
+	<section id="sectionHome">
+		<div class="container-fluid text-center">
+			<div id="divHome" class="img-responsive">
+				<div class="jumbotron">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<h1>Hello, My name is Prasad Paradkar</h1>
+							<p class="lead">Future Full Stack Developer</p>
+						</div>
+					</div>
+				</div><!-- /.jumbotron -->
+			</div><!-- /#divHome-->
+		</div>
+	</section>
+
+	<!--About Me Section-->
+	<section id="sectionAboutMe">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+	                <h2 class="section-heading">ABOUT</h2>
+	            </div>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-4 text-center"  style="height: 300px;">
+					<img src="face.jpeg" class="img-responsive img-circle img-thumbnail">
+				</div>
+				<div id="mydetail" class="col-sm-5">
+					<p>
+					My name is Prasad Paradkar. Curently I am working in IT company. I love to learn new technologies all time. My interest is in UI Development.
+					</p>
+				</div>
+			</div>
+		</div><!-- /.container -->
+	</section>
+
+	<!--Skills Section-->
+	<section id="sectionSkills">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+	                <h2 class="section-heading">SKILLS</h2>
+	            </div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<center><img class="img-responsive" src="htmllogo.png"></center>
+					<div class="media__body">
+    					<h2>80%</h2>
+  					</div>
+				</div>
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<center><img class="img-responsive" src="csslogo.png"></center>
+					<div class="media__body">
+    					<h2>70%</h2>
+  					</div>
+				</div>
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<center><img class="img-responsive" src="jslogo.png"></center>
+					<div class="media__body">
+    					<h2>70%</h2>
+  					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 hidden-xs row divSpace">
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<center><img class="img-responsive" src="asplogo.png"></center>
+					<div class="media__body">
+    					<h2>68%</h2>
+  					</div>
+				</div>
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<center><img class="img-responsive" src="bootstraplogo.png"></center>
+					<div class="media__body">
+    					<h2>55%</h2>
+  					</div>
+				</div>
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<center><img class="img-responsive" src="jquerylogo.png"></center>
+					<div class="media__body">
+    					<h2>30%</h2>
+  					</div>
+				</div>
+			</div>
+		</div><!-- /.container -->
+	</section>
+
+	<!--Contact Me Section-->
+	<section id="sectionContactMe">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+	                <h2 class="section-heading" style="color: #fff">CONTACT ME</h2>
+	            </div>
+			</div>
+		</div><!-- /.container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<form data-toggle="validator" role="form">
+						<div class="col-lg-6 divForm">
+		                  <div class="form-group">
+		                  	<div class="col-lg-12 divSpace">
+		                      <input class="form-control input-lg" data-error="Please enter name" id="inputName" placeholder="YOUR NAME*"  type="text" required />
+		                      <div class="help-block with-errors"></div>
+		                    </div>
+		                  </div>
+
+		                  <div class="form-group">
+		                  	<div class="col-lg-12 divSpace">
+		                    <input type="email" class="form-control input-lg" data-error="Please enter email address" id="inputEmail" placeholder="YOUR EMAIL*" required>
+		                    <div class="help-block with-errors"></div>
+		                    </div>
+		                  </div>
+
+		                  <div class="form-group">
+		                    <div class="form-group">
+		                    <div class="col-lg-12 divSpace">
+		                      <input type="number" name="phoneNumber" id="txtPhoneNumber" class="form-control input-lg" data-error="Please enter phone number" placeholder="YOUR PHONE*" required>
+		                      <div class="help-block with-errors"></div>
+		                      </div>
+		                    </div>
+		                  </div>
+		                </div>
+
+		                <div class="col-lg-6">
+		                  <div class="form-group">
+		                  <div class="col-lg-12 divSpace">
+		                      <textarea class="form-control input-lg" data-error="Please enter your message" id="txtMessage" placeholder="YOUR MESSAGE*" required=""></textarea>
+		                      <div class="help-block with-errors"></div>
+		                  </div>
+		                  </div>
+		                </div>
+
+                  		<div class="form-group">
+                      		<div class="row">
+								<div class="col-lg-12 text-center divSpace">
+									<button id="btnSubmit" type="submit">
+									SEND MESSAGE&nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+									</button>
+
+								</div>
+							</div>
+                  		</div>
+                	</form>
+				</div>
+			</div>
+		</div><!-- /.container -->
+	</section>
+
+	<!--Footer-->
+	<footer style="background-color: #242729">
+        <div class="container">
+            <div class="row divFooter">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright © Portfolio 2017</span>
+                </div>
+                <div class="col-md-12">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /.divFooter -->
+        </div><!-- /.container -->
+    </footer>
+</body>

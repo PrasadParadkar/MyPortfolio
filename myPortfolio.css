@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lemonada|Cantata+One|Merriweather|Libre+Baskerville|Francois+One');
+
+/*CSS style for menu bar*/
+.navbar{
+    background-color: transparent;
+}
+
+.navbar-nav>li>a{
+	font-size: 20px;
+	font-family: 'Cantata One', serif;
+}
+
+.navbar-brand>img {
+    margin-left: 40px;
+    height: 30px;
+    width: 225px;
+}
+
+.navbar-brand,.navbar-nav>li>a{
+	color: #f5f5f5;
+	font-weight: bold;
+	padding-top: 30px;
+}
+
+.navbar-nav>li>a:hover{
+	color: #f5f5f5;
+	font-size: 25px;
+	font-weight: bold;
+	background: black;
+	border-radius: 15px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+.navbar-nav>li>#lnkContact{
+	margin-right: 40px;
+}
+
+.navbar-toggle{
+	background: #931d1d;
+}
+
+.navbar-toggle .icon-bar{
+	background: #f5f5f5;
+}
+
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*CSS style for section Home*/
+.jumbotron{
+	background: none;
+}
+
+.jumbotron h1 {
+	color: white;
+	text-shadow: 5px 5px black;
+	font-size: 4.8vmax;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.jumbotron p{
+	color: white;
+	font-size: 3vmax;
+	text-shadow: 2px 2px black;
+	font-family: 'Lemonada', cursive;
+}
+
+#divHome{
+	height: 100%;
+	width: 100%;
+	background: url("back.jpg") no-repeat center;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+/*CSS style for device width <768px*/
+@media screen and (max-width: 767px){
+	.navbar-nav>li>a{
+	background: #931d1d;
+    border-radius: 50px;
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 2.5vmax;
+    font-weight: bold;
+    text-decoration: none;
+    float: right;
+    width: 200px;
+	}
+
+	.navbar-nav{
+		display: inline-block;
+		float: right;
+	}
+
+	.navbar-nav>li>#lnkContact{
+		margin-right: 0px;
+	}
+
+	.navbar-brand,.navbar-nav>li>a{
+		padding-top: 15px;
+	}
+
+	center>.img-responsive{
+		padding-top: 25px;
+	}
+}
+
+/*CSS style for collapsing navbar styles*/
+@media(min-width:768px) {
+  #mainNav {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    padding: 15px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+  #mainNav.affix {
+    padding: 0;
+    background-color: #931d1d;
+    height: 80px;
+    /* Add additional styles here for the COLLAPSED state */
+  }
+}
+
+/*Styles for About Me Section*/
+#sectionAboutMe{
+	padding-top: 150px;
+	padding-bottom: 200px;
+}
+
+#sectionAboutMe p{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.5vmax;
+}
+
+section h2.section-heading {
+    font-size: 3.5vmax;
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+#mydetail{
+	height: 300px;
+	padding-top: 70px;
+}
+
+/*Styles for Skills section*/
+#sectionSkills{
+	padding-top: 150px;
+	padding-bottom: 200px;
+	background: #eee;
+}
+
+/*CSS style for section contact me*/
+#sectionContactMe{
+	padding-top: 150px;
+	padding-bottom: 200px;
+	background-color: #931d1d;
+    background-image: url("map-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.divSpace{
+	padding-top: 40px;
+}
+
+#txtMessage{
+	height: 280px;
+	resize: none;
+}
+
+.input-lg{
+	height: 60px;
+}
+
+#btnSubmit{
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+.help-block{
+	font-weight: bold;
+	color: white !important;
+}
+
+/*CSS styles for footer*/
+.divFooter{
+	padding-top: 60px;
+	text-align: center;
+	font-weight: bold;
+    color: white;
+}
+
+.copyright {
+    line-height: 40px;
+    text-transform: uppercase;
+    text-transform: none;    
+}
+
+/*CSS effects for skills image hover*/
+.media__body {
+	background: rgba(147, 29, 29, 0.7);
+	bottom: 0;
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+	left: 0;
+	opacity: 0;
+	overflow: hidden;
+	padding: 3.75em 3em;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 0;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+}
+
+.media__body:hover { opacity: 1; }
+
+.media__body:after,
+.media__body:before {
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	bottom: 1em;
+	content: '';
+	left: 1em;
+	opacity: 0;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: 0.6s 0.2s;
+	transition: 0.6s 0.2s;
+}
+
+.media__body:before {
+	border-bottom: none;
+	border-top: none;
+	left: 2em;
+	right: 2em;
+}
+
+.media__body:after {
+	border-left: none;
+	border-right: none;
+	bottom: 2em;
+	top: 2em;
+}
+
+.media__body:hover:after,
+.media__body:hover:before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.media__body h2 { margin-top: 30px; }
+
+.media__body p { margin-bottom: 1.5em; }
+
+/*CSS style to prevent number roll of number type*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/*CSS style for social icons*/
+.fa-facebook-square{
+	background: #3b5998;
+	color: white;
+	border-radius: 5px;
+}
+
+.fa-google-plus-square{
+	background: #c32f10;
+	color: white;
+	border-radius: 5px;
+}
+
+.fa-linkedin-square{
+	background: #0976b4;
+	color:white;
+	border-radius:5px;
+}
